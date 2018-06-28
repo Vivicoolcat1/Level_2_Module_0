@@ -45,13 +45,20 @@ while(true) {
 		 if(robo[i].getY()<=50) {
 			 robo[i].setAngle(90);
 				robo[i].move(a);}
-		 if(robo[i].getX()<=2000) {
-			 robo[i].setAngle(90);
+		 if(robo[i].getX()>=1000 && robo[i].getY()<=50) {
+		 robo[i].setAngle(180);
 				robo[i].move(a);}
+		 if(robo[i].getX()>=1000 && robo[i].getY()>=600) {
+			 robo[i].setAngle(270);
+					robo[i].move(a);}
+	 if(robo[i].getY()>=600 && robo[i].getX()<=50) {
+		
+			 robo[i].sparkle();
+			 }
 				else {
 					robo[i].move(a);
 					
-				}
+			}
 		
 	}
 	}
